@@ -1,0 +1,48 @@
+
+body{
+    
+    margin: 0px;
+    
+    
+}
+
+
+
+@media only screen and (min-width: 600px)
+{
+    
+    .directory_holder {
+        position: fixed;
+        height: 100%;
+        width: 25%;
+        top: 0px;
+        left: 0px;
+        background-color: aqua;
+        
+        
+        
+    }
+    
+    
+    #main {
+        position: fixed;
+        margin-left: 25%;
+        width: calc( 100% - 25%);
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        background-color: red;
+        overflow: auto;
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+}
