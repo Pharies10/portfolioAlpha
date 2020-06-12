@@ -14,6 +14,8 @@ var directoryButtons = [{ text: "Home", call: "red"},
                         { text: "Resources", call: "white"}]
 
 
+var currentWindow = directoryButtons[0].text
+
 var main = function()
 {
     
@@ -29,8 +31,9 @@ var main = function()
            
         }).on("click", function(d){
            
-           
-           d3.select("#main").style("background-color", d.call)
+           d3.select("#"+currentWindow).style("visibility", "hidden")
+           d3.select("#"+d.text).style("visibility", "visible")
+           currentWindow = d.text;
            
            
            
@@ -39,17 +42,18 @@ var main = function()
     
     
     
-    d3.select("#Home").on("click", function(){
-        
-        d3.select("#main").style("background-color", "green");
+    
 
-    });
     
     
     
 }
 
-
+var about_button = function() {
+    d3.select("#"+currentWindow).style("visibility", "hidden")
+    d3.select("#About").style("visibility", "visible")
+    currentWindow = "About";
+}
 
 main();
 

@@ -10,7 +10,7 @@ body{
 
 @media only screen and (min-width: 600px)
 {
-    
+    /* start of the left hand directory */
     .directory {
         position: fixed;
         height: 100%;
@@ -20,11 +20,9 @@ body{
         background-color: black;
         overflow: auto;
         -ms-overflow-style: none;
-        
-        
-        
-        
+  
     }
+    
     .directory::-webkit-scrollbar {
         
         
@@ -33,14 +31,10 @@ body{
     }
     
     .ID_picture {
-        
-        
         height: 20%;
         margin-top: 1.5vw;
         background-color: black;
         text-align: center;
-        
-
     }
     
     .name_holder{
@@ -141,17 +135,11 @@ body{
         
     }
     
-    
 
-    
-    
     .other_site_holder a {
         color: whitesmoke;
         text-decoration: none;
-        
-        
-        
-        
+
         
     }
     
@@ -160,22 +148,237 @@ body{
         color: gold;
     }
 
+  
     
     
     
-    #main {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* start of the window css*/
+    .window {
         position: fixed;
         margin-left: 25%;
         width: calc( 100% - 25%);
         height: 100%;
         top: 0px;
         right: 0px;
+        overflow: scroll;
         left: 0px;
-        background-color: red;
-        overflow:scroll;
+        background-image: url(images/window_background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        -ms-overflow-style: none;
         
         
         
+    }
+    
+    .window::-webkit-scrollbar {
+        
+        
+        display: none;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* start of home screen*/
+    #Home {
+        visibility: visible;
+    }
+    
+    
+    .info_bar {
+        background-color: black;
+        opacity: .93;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 2vw;
+        height: 30%;
+        color: white;
+        overflow: hidden;
+    }
+    .bar_title {
+        margin: .5vw;
+        font-size: 3vw;
+    }
+    .bar_summary {
+        font-size: 1.5vw;
+        margin: .5px;
+        margin-bottom: 1vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+    .bar_button {
+        margin-left: 3vw;
+        background-color: black;
+        border-color: gold;
+        font-style: italic;
+        color: gold;
+        font-size: 2vw;
+        height: 3vw;
+        backface-visibility: hidden;
+        display: block;
+        
+    }
+    #about_bar {
+        height: auto;
+    }
+    
+    #port_bar {
+        height: auto;
+        
+        
+    }
+    .port_subsection {
+        
+        margin-right: 1vw;
+        margin-left: 1vw;
+        width: 28%;
+        margin-top: 1vw;
+        text-align: center;
+        border-style: solid;
+        border-radius: 50px;
+        border-color: gold;
+        
+        
+        
+    }
+    
+    #Projects {
+       
+       float: left;
+    }
+    #Classes {
+       
+        float: left;
+    }
+    
+    #Experience {
+       float: left;
+        
+    }
+    
+    .port_pic {
+        
+        height: 10vw;
+        width: 70%;
+        background-color: black;
+        border-style: none;
+        font-size: 0px;
+        color: whitesmoke;
+        font-weight: 700;
+        outline: none;
+        padding: 0px;
+        text-shadow: 2px 2px 4px #000000;
+        border-radius: 50px;
+        
+ 
+    }
+    #port_pic_proj {
+        background-image: url(images/port_pic_code.webp);
+        background-size: cover;
+    }
+    #port_pic_class {
+        background-image: url(images/port_pic_class.jpg);
+        background-size: cover;
+    }
+    #port_pic_exp {
+        background-image: url(images/port_pic_exp.jpg);
+        
+        background-size: cover;
+    }
+    
+    
+    .port_pic:hover {
+        border-color: gold;
+        border-style: solid;
+        
+        font-size: 2.3vw;
+    }
+    #port_pic_proj:hover {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(images/port_pic_code.webp);
+    }
+    #port_pic_class:hover {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(images/port_pic_class.jpg);
+    }
+    #port_pic_exp:hover {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(images/port_pic_exp.jpg);
+    }
+    
+    
+    .port_pic:active {
+        border-color: gold;
+        border-style: solid;
+        font-size: 2.2vw;
+    }
+    .port_pic:visited {
+        border-color: gold;
+        border-style: solid;
+        font-size: 2.3vw;
+    }
+    
+    .port_shortsum {
+        margin: 0px;
+        padding: 2vw;
+        
+    }
+    
+    /*start of about*/
+    #About {
+        background-color: aqua;
+        visibility: hidden;
+    }
+    
+    /*start of portfolio*/
+    #Portfolio {
+        background-color: green;
+        visibility: hidden;
+    }
+    
+    /*start of resume*/
+    #Resume {
+        background-color: yellow;
+        visibility: hidden;
+    }
+    
+    
+    /* start of resources */
+    #Resources {
+        background-color: brown;
+        visibility: hidden;
     }
     
     
