@@ -6,7 +6,7 @@ body{
     
 }
 
-
+button:focus {outline: 0}
 
 @media only screen and (min-width: 600px)
 {
@@ -107,6 +107,20 @@ body{
         
         
     }
+    
+    .button_list button:hover{
+
+        color: gold;
+
+    }
+    
+    .button_list button:active{
+        
+        font-size: 1.95vw;
+        color: gold;
+ 
+    }
+    
     .other_site_holder {
         
         color: white;
@@ -246,13 +260,19 @@ body{
     .bar_button {
         margin-left: 3vw;
         background-color: black;
-        border-color: gold;
+        border-color: darkgoldenrod;
         font-style: italic;
         color: gold;
         font-size: 2vw;
         height: 3vw;
         backface-visibility: hidden;
         display: block;
+        
+    }
+    
+    .bar_button:active {
+        
+        font-size: 1.95vw;
         
     }
     #about_bar {
@@ -269,6 +289,7 @@ body{
         margin-right: 1vw;
         margin-left: 1vw;
         width: 28%;
+        height: 28vw;
         margin-top: 1vw;
         text-align: center;
         border-style: solid;
@@ -354,6 +375,7 @@ body{
     
     .port_shortsum {
         margin: 0px;
+        font-size: 1.5vw;
         padding: 2vw;
         
     }
