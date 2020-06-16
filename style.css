@@ -245,10 +245,12 @@ button:focus {outline: 0}
         height: 30%;
         color: white;
         overflow: hidden;
+        height: auto;
     }
     .bar_title {
         margin: .5vw;
         font-size: 3vw;
+        font-family: sans-serif;
     }
     .bar_summary {
         font-size: 1.5vw;
@@ -289,14 +291,13 @@ button:focus {outline: 0}
         margin-right: 1vw;
         margin-left: 1vw;
         width: 28%;
-        height: 28vw;
+        height: 29vw;
         margin-top: 1vw;
         text-align: center;
         border-style: solid;
         border-radius: 50px;
         border-color: gold;
-        
-        
+   
         
     }
     
@@ -321,6 +322,7 @@ button:focus {outline: 0}
         background-color: black;
         border-style: none;
         font-size: 0px;
+        font-family: monospace;
         color: whitesmoke;
         font-weight: 700;
         outline: none;
@@ -329,6 +331,14 @@ button:focus {outline: 0}
         border-radius: 50px;
         
  
+    }
+    .port_title
+    {
+        font-size: 2.5vw;
+        margin-bottom: 10px;
+        font-family: sans-serif;
+        
+        
     }
     #port_pic_proj {
         background-image: url(images/port_pic_code.jpg);
@@ -397,6 +407,94 @@ button:focus {outline: 0}
         background-color: yellow;
         visibility: hidden;
     }
+    
+    
+    
+    .resume_title_bar {
+        background-color: black;
+        opacity: .93;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 2vw;
+        height: 30%;
+        color: white;
+        overflow: hidden;
+        height: auto;
+    }
+    .resume_bar_title {
+        margin: .5vw;
+        font-size: 3vw;
+        font-family: sans-serif;
+    }
+    .resume_bar_summary {
+        font-size: 1.75vw;
+        margin: .5px;
+        margin-bottom: 1vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+    .resume_bar_button {
+        margin-left: 3vw;
+        background-color: black;
+        border-color: darkgoldenrod;
+        font-style: italic;
+        color: gold;
+        font-size: 2vw;
+        height: 3vw;
+        backface-visibility: hidden;
+        display: block;
+        
+    }
+    .resume_bar_button a {
+        font-size: 2vw;
+        color: whitesmoke;
+        text-decoration: none;
+        
+        
+    }
+    
+    .resume_bar_button a:active {
+        
+        font-size: 1.95vw;
+        
+    }
+    
+    
+    
+    #resume_holder {
+        background-color: black;
+        opacity: .93;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 2vw;
+        height: 110%;
+        width: 80%;
+        margin-left: 8vw;
+        margin-right: 10vw;
+       
+      
+     
+ 
+        background: url(images/resume.png);
+        background-size: contain;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        
+    }
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     /* start of resources */

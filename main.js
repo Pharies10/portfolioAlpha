@@ -35,13 +35,14 @@ var main = function()
            
         }).on("click", function(d){
            
-           d3.select("#"+currentWindow).style("visibility", "hidden")
-           d3.select("#"+d.text).style("visibility", "visible")
-           currentWindow = d.text;
-           var state = { 'page_id': d.call, 'user_id': 5 }
-           window.history.pushState(state, d.text)
-           gate = false
-           
+           if (d.text != currentWindow) {
+                d3.select("#"+currentWindow).style("visibility", "hidden")
+                d3.select("#"+d.text).style("visibility", "visible")
+                currentWindow = d.text;
+                var state = { 'page_id': d.call, 'user_id': 5 }
+                window.history.pushState(state, d.text)
+                gate = false
+           }
            
            
        })
@@ -78,9 +79,12 @@ var main = function()
 }
 
 var callWindow = function(page) {
+    
+   
     d3.select("#"+currentWindow).style("visibility", "hidden")
     d3.select("#"+directoryButtons[page].text).style("visibility", "visible")
     currentWindow = directoryButtons[page].text;
+    
     
     
     
@@ -90,9 +94,27 @@ var callWindow = function(page) {
 
 
 var about_button = function() {
+    
+    var state = { 'page_id': 1, 'user_id': 5 }
+    window.history.pushState(state, "About")
+    gate = false
+    
+    
     d3.select("#"+currentWindow).style("visibility", "hidden")
     d3.select("#About").style("visibility", "visible")
     currentWindow = "About";
+}
+
+var resume_button = function() {
+    
+    var state = { 'page_id': 3, 'user_id': 5 }
+    window.history.pushState(state, "Resume")
+    gate = false
+    
+    
+    d3.select("#"+currentWindow).style("visibility", "hidden")
+    d3.select("#Resume").style("visibility", "visible")
+    currentWindow = "Resume";
 }
 
 main();
