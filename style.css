@@ -390,17 +390,140 @@ button:focus {outline: 0}
         
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*start of about*/
     #About {
         background-color: aqua;
         visibility: hidden;
     }
     
+    
+    .background_bar {
+        background-color: black;
+        opacity: .93;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 2vw;
+        height: 30%;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+        height: auto;
+    }
+    
+    
+    .background_bar_title {
+        margin: .5vw;
+        font-size: 3vw;
+        font-family: sans-serif;
+    }
+    
+    
+    .background_bar_summary {
+        font-size: 1.6vw;
+        margin: .5px;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        text-align: left;
+        border-left-style: solid;
+        border-left-color: gold;
+    }
+    
+    .background_bar_summary a
+    {
+        color: gold;
+        text-decoration: none;
+        
+        
+    }
+    
+    .background_bar_summary img {
+        float:right;
+        width: 25vw;
+        height: 25vw;
+        margin-left: 2vw;
+        border-radius: 100px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*start of portfolio*/
     #Portfolio {
         background-color: green;
         visibility: hidden;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     /*start of resume*/
     #Resume {
